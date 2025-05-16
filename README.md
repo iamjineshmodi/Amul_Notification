@@ -34,6 +34,22 @@
     python amul_notify.py
     ```
 
+## Scheduling with Cron (macOS example)
+
+    To run the script automatically every hour, add this line to your crontab:
+
+    ```bash
+    0 * * * * /usr/bin/python3 /Users/name/Documents/GitHub/Amul_Notification/main.py
+    ```
+
+    Edit your crontab with:
+
+    ```bash
+    crontab -e
+    ```
+
+    Make sure to use the correct path to your Python interpreter and script.
+
 ## How it works
 
 - The script fetches product data from Amul's API.
